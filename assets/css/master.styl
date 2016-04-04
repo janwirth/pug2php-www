@@ -1,7 +1,38 @@
 @import '_settings'
 
+
+
 normalize-css()
+border-box-html()
 base()
 
+grid(size)
+  scale = 10px
+  return round(size * scale)
+
+
+
+
 body
-  padding: 50px
+  padding grid(5)
+
+.Demo
+  display flex
+  height grid(50)
+  &-input
+  &-output
+    width 50%
+    border-radius grid(.5)
+    padding grid(1)
+    font-family monospace
+    letter-spacing .05em
+    line-height 1.5
+  &-input
+    border 1px solid #CCC
+    outline none
+    resize none
+    &:focus
+      border-color red
+  &-output
+    background #EEE
+    margin-left grid(5)
