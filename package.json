@@ -7,10 +7,12 @@
     "coffee-script": "^1.0.0",
     "css-pipeline": "0.3.x",
     "jade": "^1.0.0",
+    "jade2php": "^1.2.3",
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
     "roots-browserify": "^0.5.0",
     "rupture": "0.6.x",
-    "stylus": "0.52.x"
+    "stylus": "0.52.x",
+    "vue": "^1.0.20"
   }
 }

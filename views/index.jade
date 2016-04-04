@@ -1,9 +1,28 @@
 extends layout
 
 block content
-  h1 Jade2PHP
-  h4 Unleash the power of Jade for PHP!
+  h1: a(href='https://github.com/SE7ENSKY/jade2php') Pug2PHP
+  h2 Unleash the power of Pug for PHP!
+
+  :marked
+    __Note:__ Pretty output is currently not supported.
+
+    __Note:__ The output requires Pug2php's [runtime.php](https://github.com/SE7ENSKY/jade2php/blob/master/support/runtime.php) to run.
+
+    __Note:__ Jade is currently being renamed to PugJS due to legal issues.
+
   h2 Demo
   .Demo
-    textarea.Demo-input
+    textarea(v-model='input' v-on:keyup='render' v-on:keydown='catchTab' ).Demo-input
     .Demo-output
+      .Demo-errorOutput(v-if='error') {{error}}
+      | {{output}}
+
+  footer
+    p Built with 
+      a(href='https://roots.cx') Roots
+      | , 
+      a(href='https://vuejs.org') Vue.JS
+      |  and 
+      a(href='https://browserify.org') Browserify
+      | .

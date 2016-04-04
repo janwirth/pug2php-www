@@ -12,6 +12,10 @@ grid(size)
 
 
 
+a
+  color blue
+  &:visited
+    color darkblue
 
 body
   padding grid(5)
@@ -32,7 +36,13 @@ body
     outline none
     resize none
     &:focus
-      border-color red
+      border-color blue
   &-output
     background #EEE
     margin-left grid(5)
+  &-errorOutput
+    color white
+    padding grid(1)
+    border-radius grid(.5)
+    background red
+    margin-bottom grid(2)
